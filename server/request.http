@@ -1,0 +1,30 @@
+###
+### Đăng ký người dùng
+###
+
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "password123"
+}
+
+###
+### Đăng nhập người dùng
+###
+
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "password123"
+}
+
+###
+### Truy cập tài nguyên được bảo vệ bằng token
+###
+
+GET http://localhost:8080/api/v1/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWYxYmQ0N2I4ZDI2NTIxMjE4YzRhNTIiLCJlbWFpbCI6Inllbm4wOTQzN0BnbWFpbC5jb20iLCJpYXQiOjE3MTAzNDE0OTN9.0wd38412m4vitZ1C_ItwvWBzyrGgBetrmqgfsXlqlvA

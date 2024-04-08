@@ -1,0 +1,38 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poopins", sans-serif;
+}
+.filter {
+  width: 100%;
+  height: 100dvh;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  z-index: 9;
+  transition: ease 0.5s;
+  top: 0;
+}
+.filterAdmin {
+  width: 100%;
+  height: 100dvh;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  z-index: 9;
+  transition: ease 0.5s;
+  top: 0;
+}
+.gradient {
+  background: linear-gradient(to top, rgba(0, 0, 0, 2), rgba(91, 91, 91, 0.2));
+  opacity: 0.9;
+}
+.scroll-content-detail::-webkit-scrollbar {
+  display: none;
+}
+
